@@ -278,7 +278,7 @@
             </div>
         </div>
 
-        <script>
+        <!-- <script>
             // Close popup function
             function closePopup() {
                 const popup = document.getElementById('popup'); // Get popup element
@@ -290,8 +290,8 @@
             }
 
 
-        </script>
-        <!-- <script>
+        </script> -->
+        <script>
             // Close popup functionality
             document.querySelector('.close').addEventListener('click', function() {
                 document.querySelector('.popup').style.display = 'none';
@@ -305,7 +305,7 @@
             document.querySelector('.call').addEventListener('click', function() {
                 alert('Initiating call...');
             });
-        </script> -->
+        </script>
         
         </script>
         <style>
@@ -360,35 +360,56 @@
                 
             }
             .popup p {
-                color: #6c757d;
-                margin: 0 0 20px;
+            color: #6c757d;
+            margin: 0 0 20px;
+        }
+        .popup input {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin: 10px 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .popup .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .popup .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .popup .buttons .whatsapp {
+            background-color: #f8f9fa;
+            color: #28a745;
+        }
+        .popup .buttons .call {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+            @media (max-width: 600px) {
+            .popup h2 {
+                font-size: 20px;
+            }
+            .popup p {
+                font-size: 14px;
             }
             .popup input {
-                width: calc(100% - 40px);
-                padding: 10px;
-                margin: 10px 20px;
-                border: 1px solid #ced4da;
-                border-radius: 5px;
-            }
-            .popup .buttons {
-                display: flex;
-                justify-content: space-between;
-                padding: 20px;
+                font-size: 14px;
             }
             .popup .buttons button {
-                padding: 10px 20px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
+                font-size: 14px;
+                padding: 8px 15px;
             }
-            .popup .buttons .whatsapp {
-                background-color: #f8f9fa;
-                color: #28a745;
-            }
-            .popup .buttons .call {
-                background-color: #28a745;
-                color: #fff;
-            }
+            
+        }
         </style>
 
         <!-- <style>
