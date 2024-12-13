@@ -238,7 +238,7 @@
         </style>
         <!-------------- POPUP-------------->
 
-        <div id="popup" class="popup">
+        <!-- <div id="popup" class="popup">
             <span class="close-btn" onclick="closePopup()">&times;</span>
             <h3 style="color:#F10000; text-align: center;">
                 <strong>बाजारभावापेक्षा कमी दरात</strong>
@@ -250,9 +250,7 @@
                     <strong>Serving:</strong> Navi Mumbai (Vashi, Sanpada, Juinagar, Koperkhairane, and Turbhe)
                 </p>
                 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-        <!-- <p style="margin: 0;"><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast <i class="fa-solid fa-forward-fast"></i></p>
-        <p style="margin: 0;"><i class="fa-regular fa-file"></i> Correct Reports - Verified by MD Doctors <i class="fa-solid fa-user-doctor"></i></p> -->
-                    <ul class="popul">
+    
                         <li class="s1"><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast</li>
                         <li class="s1"><i class="fa-regular fa-file"></i> Correct Reports </li>
                         <li class="s1">Verified by MD Doctors <i class="fa-solid fa-user-doctor"></i></li>
@@ -265,7 +263,45 @@
             </p>
             <p> <strong><i class="fa-brands fa-whatsapp"></i> WhatsApp:</strong><a href="9867910716" style="color: #F10000;"> 8104022721</a> </p>
 
+        </div> -->
+        <div class="popup" id="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="icon">
+                <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <h2><strong>बाजारभावापेक्षा कमी दरात</strong></h2>
+            <p>Blood Test at your Home! Affordable Rates!</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <!-- <p>
+                    <strong>Serving:</strong> Navi Mumbai (Vashi, Sanpada, Juinagar, Koperkhairane, and Turbhe)
+                </p> -->
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <!-- <p style="margin: 0;"><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast <i class="fa-solid fa-forward-fast"></i></p>
+        <p style="margin: 0;"><i class="fa-regular fa-file"></i> Correct Reports - Verified by MD Doctors <i class="fa-solid fa-user-doctor"></i></p> -->
+                    <ul class="popul">
+                        <li class="s1"><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast</li>
+                        <li class="s1"><i class="fa-regular fa-file"></i> Correct Reports </li>
+                        <li class="s1">Verified by MD Doctors <i class="fa-solid fa-user-doctor"></i></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="whatsapp">WhatsApp Us</button>
+                <button class="call">Call Now</button>
+            </div>
         </div>
+        <style>
+            .popul{
+                padding-left: 40px;
+                list-style-type: none;
+            }
+            .s1{
+                float: left;
+                padding-right:20px;
+                padding-left: 0% ; 
+            }
+        </style>
 
         <script>
             // Close popup function
@@ -282,6 +318,88 @@
         </script>
         </script>
         <style>
+            .popup {
+                /* width: 400px;
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                text-align: center;
+                position: relative; */
+                display: block;
+                /* Ensure it is visible */
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50%;
+                /* Increased width */
+                max-width: 700px;
+                padding: 20px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                z-index: 1000;
+                text-align: center;
+            }
+            .popup .close {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                cursor: pointer;
+                font-size: 20px;
+                color: #333;
+                cursor: pointer;
+            }
+            .popup .icon {
+                background-color: red;
+                color: #fff;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                margin: -30px auto 10px;
+            }
+            .popup h2 {
+                font-size: 22px;
+                margin: 10px 0;
+                
+            }
+            .popup p {
+                color: #6c757d;
+                margin: 0 0 20px;
+            }
+            .popup input {
+                width: calc(100% - 40px);
+                padding: 10px;
+                margin: 10px 20px;
+                border: 1px solid #ced4da;
+                border-radius: 5px;
+            }
+            .popup .buttons {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+            }
+            .popup .buttons button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .popup .buttons .whatsapp {
+                background-color: #f8f9fa;
+                color: #283779;
+            }
+            .popup .buttons .call {
+                background-color: #283779;
+                color: #fff;
+            }
+        </style>
+
+        <!-- <style>
             .popup {
                 display: block;
                 /* Ensure it is visible */
@@ -352,7 +470,7 @@
                 }
                 p{}
             }
-        </style>
+        </style> -->
 
         <!-- About Us section Start -->
         <section class="about-fore" id="about">
@@ -1243,5 +1361,4 @@
 <!-- Mirrored from pixydrops.com/laboix-html/index-3-one-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Mar 2024 11:56:09 GMT -->
 
 <!-- Mirrored from qlabs24.com/index-3-one-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Aug 2024 13:49:00 GMT -->
-
 </html>
