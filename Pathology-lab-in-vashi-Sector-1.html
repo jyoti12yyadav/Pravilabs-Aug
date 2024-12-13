@@ -275,16 +275,34 @@
                 <!-- <p>
                     <strong>Serving:</strong> Navi Mumbai (Vashi, Sanpada, Juinagar, Koperkhairane, and Turbhe)
                 </p> -->
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <!-- <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;"> -->
         <!-- <p style="margin: 0;"><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast <i class="fa-solid fa-forward-fast"></i></p>
         <p style="margin: 0;"><i class="fa-regular fa-file"></i> Correct Reports - Verified by MD Doctors <i class="fa-solid fa-user-doctor"></i></p> -->
-                    <ul class="popul">
+                    <!-- <ul class="popul">
                         <li class="s1"><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast</li>
                         <li class="s1"><i class="fa-regular fa-file"></i> Correct Reports </li>
-                        <li class="s1">Verified by MD Doctors <i class="fa-solid fa-user-doctor"></i></li>
-                    </ul>
+                        <li class="s2"><i class="fa-solid fa-user-doctor"></i> &nbsp;Verified by MD Doctors </li>
+                        <li class="s2"><i class="fa-regular fa-file"></i> Correct Reports </li>
+                    </ul> -->
+
                     
+                <!-- </div> -->
+                <div class="container">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-md-6 pravi-popup">
+                            <p><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast</p>
+                            <p><i class="fa-solid fa-user-doctor"></i> Verified by MD Doctors</p>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="col-md-6 pravi-popup">
+                            <p><i class="fa-regular fa-file"></i> Correct Reports</p>
+                            <p><i class="fa-solid fa-vial"></i> Accurate Testing</p>
+                        </div>
+                    </div>
                 </div>
+                
+                
             </div>
             <!-- <div class="buttons">
                 <button class="whatsapp">WhatsApp Us</button>
@@ -302,18 +320,44 @@
             </div>
             
         </div>
-
         <style>
+            .pravi-popup p {
+                    color: #283779;
+                    font-size: 16px; 
+                    /* padding: 5px 10px;  */
+                    margin-left: 45px;  
+                    display: flex; 
+                    align-items: center;
+            }
+
+            /* Styling for icons */
+            .pravi-popup i {
+                    color: #283779;
+                    font-size: 20px; 
+                    margin-right: 10px; 
+            }
+
+            
+        </style>
+        <!-- <style>
             .popul{
                 padding-left: 40px;
                 list-style-type: none;
             }
             .s1{
-                float: left;
+                /* float: left; */
+                font-size: 16px;
                 padding-right:20px;
-                padding-left: 0% ; 
+                padding-left: 20px ; 
             }
-        </style>
+            .s2{
+                /* float: right; */
+                font-size: 16px;
+                padding-right:20px;
+                padding-left: 20px ; 
+            }
+        </style> -->
+        
 
         <script>
             // Close popup function
@@ -331,20 +375,15 @@
         </script>
         <style>
             .popup {
-                /* width: 400px;
-                background: #fff;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                border-radius: 10px;
-                text-align: center;
-                position: relative; */
+               
                 display: block;
-                /* Ensure it is visible */
+                
                 position: fixed;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 width: 50%;
-                /* Increased width */
+                
                 max-width: 700px;
                 padding: 20px;
                 background-color: #fff;
@@ -379,10 +418,10 @@
                 margin: 10px 0;
                 
             }
-            .popup p {
+            /* .popup p {
                 color: #6c757d;
                 margin: 0 0 20px;
-            }
+            } */
             .popup input {
                 width: calc(100% - 40px);
                 padding: 10px;
@@ -396,7 +435,7 @@
                 padding: 20px;
             }
             .popup .buttons button {
-                padding: 10px 20px;
+                padding: 10px 40px;
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
@@ -411,79 +450,7 @@
             }
         </style>
 
-        <!-- <style>
-            .popup {
-                display: block;
-                /* Ensure it is visible */
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 50%;
-                /* Increased width */
-                max-width: 700px;
-                padding: 20px;
-                background-color: #fff;
-                border: 1px solid #ccc;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                z-index: 1000;
-
-            }
-            .popul{
-                padding-left: 0%;
-                list-style-type: none;
-            }
-            .s1{
-                float: left;
-                padding-right:20px;
-                padding-left: 0% ; 
-            }
-
-            .h3 {
-                text-align: center;
-            }
-
-            .popup .close-btn {
-                position: absolute;
-                top: 5px;
-                right: 10px;
-                cursor: pointer;
-                font-size: 20px;
-                color: #333;
-            }
-
-            @media (max-width: 1025px) {
-                .popup {
-                    width: 80%;
-                    /* Adjust width for smaller screens */
-                    padding: 15px;
-                    /* Reduce padding */
-                }
-            }
-
-
-            @media (max-width: 768px) {
-                .popup {
-                    width: 90%;
-                    /* Adjust width for smaller screens */
-                    padding: 15px;
-                    /* Reduce padding */
-                   
-                }
-            }
-
-            @media (max-width: 480px) {
-                .popup {
-                    width: 90%;
-                    /* Make the popup almost full-screen for small devices */
-                    padding: 10px;
-                    /* Further reduce padding */
-                    
-                }
-                
-            }
-        </style> -->
-
+        
         <!-- About Us section Start -->
         <section class="about-fore" id="about">
             <div class="container">
