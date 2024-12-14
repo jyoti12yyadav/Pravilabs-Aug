@@ -302,9 +302,9 @@
         <style>
             /* Base styles */
             .para1 {
-    color: #ffffff; /* Text color */
-    text-shadow: 2px 2px 4px #e21414e3; /* Subtle white glow */
-}
+                color: #ffffff; /* Text color */
+                text-shadow: 2px 2px 4px #e21414e3; /* Subtle white glow */
+            }
 
 
 .para {
@@ -396,7 +396,7 @@ button.call:hover {
 }
 
 .popup .icon {
-    background-color: #e21414e3;
+    background-color: #e21414;
     color: #fff;
     width: 60px;
     height: 60px;
@@ -406,6 +406,7 @@ button.call:hover {
     align-items: center;
     font-size: 24px;
     margin: -30px auto 10px;
+    opacity: 1;
 }
 
 .popup h2 {
@@ -517,6 +518,24 @@ button.call:hover {
         font-size: 20px;
     }
 }
+
+/* Add blur effect to body */
+body.blur {
+    filter: blur(5px); /* Applies the blur effect */
+    pointer-events: none; /* Disables interactions on the blurred content */
+}
+
+/* Overlay to dim the background */
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    z-index: 999; /* Ensures it appears behind the popup */
+}
+
 
         </style>
 
@@ -775,11 +794,11 @@ button.call:hover {
                                 <ul class="contact-two__content__list list-unstyled">
                                     <li class="contact-two__content__list__item">
                                         <div class="contact-two__content__icon">
-                                            <i class="icon-telephone-call-1"></i>
+                                            <i class="fa-brands fa-whatsapp"></i>
                                         </div>
                                         <div class="contact-two__content__inner">
-                                            <span class="contact-two__content__title">Call us now</span>
-                                            <h4 class="contact-two__content__text"><a href="tel:8104022721">Free
+                                            <span class="contact-two__content__title">Have Questions? Call or WhatsApp Us                                            </span>
+                                            <h4 class="contact-two__content__text"><a href="tel:8104022721">
                                                     8104022721</a></h4>
                                         </div>
                                     </li>
