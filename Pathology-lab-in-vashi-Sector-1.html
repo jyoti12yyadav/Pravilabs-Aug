@@ -268,17 +268,19 @@
         
             <div class="container">
                 <div class="row justify-content-center align-items-center">
+                    <div class="col-1"></div>
                     <div class="col-5 d-flex justify-content-center">
                         <a href="https://api.whatsapp.com/send/?phone=918104022721&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp" style="text-decoration: none;">
-                            <button class="whatsapp"><i class="fa-brands fa-whatsapp""></i> WhatsApp Us</button>
+                            <button class="whatsapp"><i class="fa-brands fa-whatsapp""></i> WhatsApp</button>
+                        </a>
+                    </div>
+                    
+                    <div class="col-5 d-flex justify-content-center">
+                        <a href="tel:+91 8104022721" class="call" style="text-decoration: none;">
+                            <button class="call"><i class="fa-solid fa-phone" ></i> Call</button>
                         </a>
                     </div>
                     <div class="col-1"></div>
-                    <div class="col-5 d-flex justify-content-center">
-                        <a href="tel:+91 8104022721" class="call" style="text-decoration: none;">
-                            <button class="call"><i class="fa-solid fa-phone" ></i> Call Now</button>
-                        </a>
-                    </div>
                 </div>
             </div>
             
@@ -464,14 +466,16 @@ button.call:hover {
     }
 
     button.whatsapp {
-        font-size: 10px;
+        font-size: 14px;
         padding: 10px 15px;
     }
-    .whatsapp i{
-    font-size: 14px;
+
+    .whatsapp i {
+        font-size: 16px;
     }
-    button.call{
-        font-size: 10px;
+
+    button.call {
+        font-size: 14px;
         padding: 10px 20px;
     }
 
@@ -482,8 +486,16 @@ button.call:hover {
     }
 
     .row {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+    }
+
+    /* Ensure buttons stay horizontal */
+    .popup .buttons {
+        display: flex;
+        flex-direction: row; /* Align buttons horizontally */
+        justify-content: center;
+        gap: 10px; /* Add space between buttons */
     }
 }
 
@@ -492,7 +504,6 @@ button.call:hover {
     .popup {
         width: 95%;
         padding: 10px;
-        
     }
 
     .popup h2 {
@@ -505,16 +516,19 @@ button.call:hover {
     }
 
     button.whatsapp {
-        font-size: 10px;
+        font-size: 16px;
         padding: 8px 10px;
     }
-    .whatsapp i{
-    font-size: 14px;
+
+    .whatsapp i {
+        font-size: 16px;
     }
-    button.call{
-        font-size: 10px;
+
+    button.call {
+        font-size: 16px;
         padding: 8px 24px;
     }
+
     .pravi-popup p {
         font-size: 12px;
         margin-left: 40px;
@@ -524,6 +538,14 @@ button.call:hover {
         width: 50px;
         height: 50px;
         font-size: 20px;
+    }
+
+    /* Ensure buttons stay horizontal */
+    .popup .buttons {
+        display: flex;
+        flex-direction: row; /* Align buttons horizontally */
+        justify-content: center;
+        gap: 8px; /* Add space between buttons */
     }
 }
 
