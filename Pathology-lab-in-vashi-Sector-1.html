@@ -237,84 +237,54 @@
             }
         </style>
         <!-------------- POPUP-------------->
-
-        <!-- <div id="popup" class="popup">
-            <span class="close-btn" onclick="closePopup()">&times;</span>
-            <h3 style="color:#F10000; text-align: center;">
-                <strong>बाजारभावापेक्षा कमी दरात</strong>
-            </h3>
-            <h5 style="color: #283779; text-align: center;">Blood Test at your Home! Affordable Rates!</h5>
-
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; ">
-                <p>
-                    <strong>Serving:</strong> Navi Mumbai (Vashi, Sanpada, Juinagar, Koperkhairane, and Turbhe)
-                </p>
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-    
-                        <li class="s1"><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast</li>
-                        <li class="s1"><i class="fa-regular fa-file"></i> Correct Reports </li>
-                        <li class="s1">Verified by MD Doctors <i class="fa-solid fa-user-doctor"></i></li>
-                    </ul>
-                    
-                </div>
-            </div>
-            <p>
-                <strong><i class="fa-solid fa-phone"></i> Call Now:</strong><a href="9867910716" style="color: #F10000;"> 9867910716</a> 
-            </p>
-            <p> <strong><i class="fa-brands fa-whatsapp"></i> WhatsApp:</strong><a href="9867910716" style="color: #F10000;"> 8104022721</a> </p>
-
-        </div> -->
         <div class="popup" id="popup">
             <span class="close" onclick="closePopup()">&times;</span>
             <div class="icon">
                 <i class="fa-solid fa-phone-volume"></i>
             </div>
-            <h2><strong>बाजारभावापेक्षा कमी दरात</strong></h2>
-            <p>Blood Test at your Home! Affordable Rates!</p>
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-                <!-- <p>
-                    <strong>Serving:</strong> Navi Mumbai (Vashi, Sanpada, Juinagar, Koperkhairane, and Turbhe)
-                </p> -->
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-        <!-- <p style="margin: 0;"><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast <i class="fa-solid fa-forward-fast"></i></p>
-        <p style="margin: 0;"><i class="fa-regular fa-file"></i> Correct Reports - Verified by MD Doctors <i class="fa-solid fa-user-doctor"></i></p> -->
-                    <ul class="popul">
-                        <li class="s1"><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast</li>
-                        <li class="s1"><i class="fa-regular fa-file"></i> Correct Reports </li>
-                        <li class="s1">Verified by MD Doctors <i class="fa-solid fa-user-doctor"></i></li>
-                    </ul>
+            <h1 class="para1"><strong>बाजारभावापेक्षा कमी दरात</strong></h1>
+            <p class="para">Blood Test at your Home! Affordable Rates!</p>
+            <p class="para3">Serving - Navi Mumbai (Vashi, Sanpada, Juinagar, Koperkharane and Turbhe)
+            </p>
+            
+            
+            <div class="container">
+                <div class="row">
+                    <!-- Column 1 -->
+                    <div class="col-md-6 pravi-popup ">
+                        <p><i class="fa-solid fa-house"></i> Home Visit in 60 Mins - Fast</p>
+                        <p><i class="fa-solid fa-user-doctor"></i> Verified by MD Doctors</p>
+                    </div>
                     
+                    <!-- Column 2 -->
+                    <div class="col-md-6 pravi-popup" ">
+                        <p><i class="fa-regular fa-file"></i> Correct Reports</p>
+                        <p><i class="fa-solid fa-vial"></i> Accurate Testing</p>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="buttons">
-                <button class="whatsapp">WhatsApp Us</button>
-                <button class="call">Call Now</button>
-            </div> -->
-            <div class="buttons">
-                <!-- Add phone number for WhatsApp -->
-                <a href="https://api.whatsapp.com/send/?phone=918104022721&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp" style="text-decoration: none;">
-                    <button class="whatsapp">WhatsApp Us</button>
-                </a>
-                <!-- Add phone number for Call -->
-                <a href="tel:+91 8104022721" class="call" style="text-decoration: none;">
-                    <button class="call">Call Now</button>
-                </a>
+        
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-1"></div>
+                    <div class="col-5 d-flex justify-content-center">
+                        <a href="https://api.whatsapp.com/send/?phone=918104022721&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp" style="text-decoration: none;">
+                            <button class="whatsapp"><i class="fa-brands fa-whatsapp""></i> WhatsApp</button>
+                        </a>
+                    </div>
+                    
+                    <div class="col-5 d-flex justify-content-center">
+                        <a href="tel:+91 8104022721" class="call" style="text-decoration: none;">
+                            <button class="call"><i class="fa-solid fa-phone" ></i> Call</button>
+                        </a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
             </div>
             
         </div>
-
-        <style>
-            .popul{
-                padding-left: 40px;
-                list-style-type: none;
-            }
-            .s1{
-                float: left;
-                padding-right:20px;
-                padding-left: 0% ; 
-            }
-        </style>
-
+        
+        
         <script>
             // Close popup function
             function closePopup() {
@@ -330,160 +300,259 @@
         </script>
         </script>
         <style>
-            .popup {
-                /* width: 400px;
-                background: #fff;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                border-radius: 10px;
-                text-align: center;
-                position: relative; */
-                display: block;
-                /* Ensure it is visible */
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 50%;
-                /* Increased width */
-                max-width: 700px;
-                padding: 20px;
-                background-color: #fff;
-                border: 1px solid #ccc;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                z-index: 1000;
-                text-align: center;
+            /* Base styles */
+            .para1 {
+                color: #ffffff; /* Text color */
+                text-shadow: 2px 2px 4px #e21414e3; /* Subtle white glow */
             }
-            .popup .close {
-                position: absolute;
-                top: 5px;
-                right: 10px;
-                cursor: pointer;
-                font-size: 20px;
-                color: #333;
-                cursor: pointer;
-            }
-            .popup .icon {
-                background-color: red;
-                color: #fff;
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 24px;
-                margin: -30px auto 10px;
-            }
-            .popup h2 {
-                font-size: 22px;
-                margin: 10px 0;
-                
-            }
-            .popup p {
-                color: #6c757d;
-                margin: 0 0 20px;
-            }
-            .popup input {
-                width: calc(100% - 40px);
-                padding: 10px;
-                margin: 10px 20px;
-                border: 1px solid #ced4da;
-                border-radius: 5px;
-            }
-            .popup .buttons {
-                display: flex;
-                justify-content: space-between;
-                padding: 20px;
-            }
-            .popup .buttons button {
-                padding: 10px 20px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-            .popup .buttons .whatsapp {
-                background-color: #f8f9fa;
-                color: #283779;
-            }
-            .popup .buttons .call {
-                background-color: #283779;
-                color: #fff;
-            }
+
+
+.para {
+    color: #fff;
+}
+
+.para3 {
+    color: #dbcaca;
+}
+
+.pravi-popup p {
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 16px;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+}
+.whatsapp i{
+    font-size: 22px;
+}
+/* Styling for icons */
+.pravi-popup i {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Row adjustments */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Button styling */
+button.whatsapp, button.call {
+    background-color: #25D366; /* WhatsApp green for WhatsApp button */
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px; /* Add margin between buttons */
+    transition: background-color 0.3s ease;
+}
+
+button.call {
+    background-color: #e21414e3; /* Red for Call Now button */
+    padding: 12px 40px;
+    
+}
+
+/* Hover effects */
+button.whatsapp:hover {
+    background-color: #20b358; /* Slightly darker green */
+}
+
+button.call:hover {
+    background-color: #e21414e3; /* Slightly darker red */
+}
+
+.popup {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 693px;
+    background-color: #2d3c7e;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(148, 128, 128, 0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #d4d0d0;
+}
+
+.popup .icon {
+    background-color: #e21414;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: -30px auto 10px;
+    transform: rotate(-35deg); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.popup h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.popup input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.popup .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.popup .buttons button {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup .buttons .whatsapp {
+    background-color: #f8f9fa;
+    color: #283779;
+}
+
+.popup .buttons .call {
+    background-color: #283779;
+    color: #fff;
+}
+
+/* Media queries for small devices */
+@media (max-width: 768px) {
+    .popup {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup h2 {
+        font-size: 20px;
+    }
+
+    .popup input {
+        width: calc(100% - 30px);
+        padding: 8px;
+    }
+
+    button.whatsapp {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .whatsapp i {
+        font-size: 16px;
+    }
+
+    button.call {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .pravi-popup p {
+        font-size: 14px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Ensure buttons stay horizontal */
+    .popup .buttons {
+        display: flex;
+        flex-direction: row; /* Align buttons horizontally */
+        justify-content: center;
+        gap: 10px; /* Add space between buttons */
+    }
+}
+
+/* Media queries for very small devices (max-width: 375px) */
+@media (max-width: 375px) {
+    .popup {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .popup h2 {
+        font-size: 18px;
+    }
+
+    .popup input {
+        width: calc(100% - 20px);
+        padding: 6px;
+    }
+
+    button.whatsapp {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    .whatsapp i {
+        font-size: 16px;
+    }
+
+    button.call {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+    .pravi-popup p {
+        font-size: 12px;
+        margin-left: 40px;
+    }
+
+    .popup .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    /* Ensure buttons stay horizontal */
+    .popup .buttons {
+        display: flex;
+        flex-direction: row; /* Align buttons horizontally */
+        justify-content: center;
+        gap: 8px; /* Add space between buttons */
+    }
+}
+
+
+
+
         </style>
 
-        <!-- <style>
-            .popup {
-                display: block;
-                /* Ensure it is visible */
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 50%;
-                /* Increased width */
-                max-width: 700px;
-                padding: 20px;
-                background-color: #fff;
-                border: 1px solid #ccc;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                z-index: 1000;
-
-            }
-            .popul{
-                padding-left: 0%;
-                list-style-type: none;
-            }
-            .s1{
-                float: left;
-                padding-right:20px;
-                padding-left: 0% ; 
-            }
-
-            .h3 {
-                text-align: center;
-            }
-
-            .popup .close-btn {
-                position: absolute;
-                top: 5px;
-                right: 10px;
-                cursor: pointer;
-                font-size: 20px;
-                color: #333;
-            }
-
-            @media (max-width: 1025px) {
-                .popup {
-                    width: 80%;
-                    /* Adjust width for smaller screens */
-                    padding: 15px;
-                    /* Reduce padding */
-                }
-            }
-
-
-            @media (max-width: 768px) {
-                .popup {
-                    width: 90%;
-                    /* Adjust width for smaller screens */
-                    padding: 15px;
-                    /* Reduce padding */
-                   
-                }
-            }
-
-            @media (max-width: 480px) {
-                .popup {
-                    width: 90%;
-                    /* Make the popup almost full-screen for small devices */
-                    padding: 10px;
-                    /* Further reduce padding */
-                    
-                }
-                p{}
-            }
-        </style> -->
-
+        
         <!-- About Us section Start -->
         <section class="about-fore" id="about">
             <div class="container">
@@ -515,11 +584,11 @@
                                 </strong>
 
                             </div>
-                            <div class="Test-section">
+                            <div class="Test-section" style="background-color: #f0f0f0; padding-top: 20px; padding-bottom: 20px;">
                                 <div class="container">
                                     <div class="section-title text-center">
                                         <h2>Some of the Tests offered by Pravi Labs</h2>
-                                        <br>
+                 
                                         <p>Be it common and regular Tests or Specilized Tests, We offer Everything at Pravi Labs</p>
                                     </div>
 
@@ -581,6 +650,7 @@
                                 <br>
                                 <p class="section-title text-center">Book your test with Pravi Labs today for fast, accurate results and free home blood collection!</p>
                             </div>
+                            <br>
 
 <style>
            ul li {
@@ -705,9 +775,9 @@
                 </div>
             </div>
             <div class="card card-image">
-                <img src="assets/images/pravilabs slider 1 png.png" alt="Image 1" class="slider-image active"
+                <img src="assets\images\gallery\pravilabs _Free Home blood_Vashi railway station _13-12_2024.jpg" alt="Image 1" class="slider-image active"
                     class="lazyload">
-                <img src="assets/images/pravilabs slider 2.png" alt="Image 2" class="slider-image" class="lazyload">
+                <img src="assets\images\gallery\pravilabs _Free Home blood_Vashi railway station _13-12_2024.jpg" alt="Image 2" class="slider-image" class="lazyload">
             </div>
         </div>
         <script>
@@ -737,11 +807,11 @@
                                 <ul class="contact-two__content__list list-unstyled">
                                     <li class="contact-two__content__list__item">
                                         <div class="contact-two__content__icon">
-                                            <i class="icon-telephone-call-1"></i>
+                                            <i class="fa-brands fa-whatsapp"></i>
                                         </div>
                                         <div class="contact-two__content__inner">
-                                            <span class="contact-two__content__title">Call us now</span>
-                                            <h4 class="contact-two__content__text"><a href="tel:8104022721">Free
+                                            <span class="contact-two__content__title">Have Questions? Call or WhatsApp Us                                            </span>
+                                            <h4 class="contact-two__content__text"><a href="tel:8104022721">
                                                     8104022721</a></h4>
                                         </div>
                                     </li>
@@ -776,7 +846,9 @@
                                 <h6 class="sec-title__tagline"><img src="assets/images/shapes/sec-title-s-2.png"
                                         alt="Contact With Us" class="sec-title__img" class="lazyload">Contact With Us
                                 </h6>
-                                <h4 class="sec-title__title">Book your convenient Date & Time</h4>
+                                <h5 style="color: #fff;">Leave Your Details Below
+                                    Schedule Your Health Check-Up Today for Trusted Results
+                                    </h5>
                             </div>
                             <form class="contact-form" action="submit_form.php" method="POST">
                                 <div class="form-group">
